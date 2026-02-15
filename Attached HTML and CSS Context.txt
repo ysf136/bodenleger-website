@@ -1,0 +1,157 @@
+Attached HTML and CSS Context
+
+<section class="section" id="referenzen">
+      <div class="container">
+        <header class="section-head">
+          <h2>Ausgewählte Projekte</h2>
+          <p>Ein kleiner Einblick in Böden, die wir in den letzten Monaten verlegt haben.</p>
+        </header>
+        <div class="project-grid">
+          <article class="project-card">
+            <img src="images/1.jpg" alt="Projekt 1" loading="lazy" width="400" height="400">
+          </article>
+          <article class="project-card">
+            <img src="images/4.jpg" alt="Projekt 2" loading="lazy" width="400" height="400">
+          </article>
+          <article class="project-card">
+            <img src="images/5.jpg" alt="Projekt 3" loading="lazy" width="400" height="400">
+          </article>
+          <article class="project-card">
+            <img src="images/6.jpg" alt="Projekt 4" loading="lazy" width="400" height="400">
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+/* Matched Rule from user-agent */
+article, aside, footer, header, hgroup, main, nav, search, section {
+  display: block;
+}
+
+/* Matched Rule from user-agent */
+address, blockquote, center, div, figure, figcaption, footer, form, header, hr, legend, listing, main, p, plaintext, pre, summary, xmp, article, aside, h1, h2, h3, h4, h5, h6, hgroup, nav, section, search, table, caption, colgroup, col, thead, tbody, tfoot, tr, td, th, dir, dd, dl, dt, menu, ol, ul, li, bdi, output, [dir="ltr" i], [dir="rtl" i], [dir="auto" i] {
+  unicode-bidi: isolate;
+}
+
+/* Matched Rule from regular */
+* {
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Matched Rule from regular */
+.section {
+  padding: 80px 0;
+  padding-top: 80px;
+  padding-right: 0px;
+  padding-bottom: 80px;
+  padding-left: 0px;
+}
+
+/* Inherited from ancestor level 1 (user-agent) */
+article, aside, footer, header, hgroup, main, nav, search, section {
+  display: block;
+}
+
+/* Inherited from ancestor level 1 (user-agent) */
+address, blockquote, center, div, figure, figcaption, footer, form, header, hr, legend, listing, main, p, plaintext, pre, summary, xmp, article, aside, h1, h2, h3, h4, h5, h6, hgroup, nav, section, search, table, caption, colgroup, col, thead, tbody, tfoot, tr, td, th, dir, dd, dl, dt, menu, ol, ul, li, bdi, output, [dir="ltr" i], [dir="rtl" i], [dir="auto" i] {
+  unicode-bidi: isolate;
+}
+
+/* Inherited from ancestor level 1 (regular) */
+* {
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Inherited from ancestor level 2 (user-agent) */
+body {
+  display: block;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+/* Inherited from ancestor level 2 (regular) */
+* {
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Inherited from ancestor level 2 (regular) */
+body {
+  margin: 0;
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(to bottom, #ffffff 0%, var(--warm-beige) 100%);
+  color: var(--text);
+  line-height: 1.7;
+  padding-top: 0;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  font-family: Manrope, system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  line-height: 1.7;
+  padding-top: 0px;
+}
+
+/* Inherited from ancestor level 3 (user-agent) */
+html {
+  display: block;
+}
+
+/* Inherited from ancestor level 3 (user-agent) */
+:root {
+  view-transition-name: root;
+}
+
+/* Inherited from ancestor level 3 (regular) */
+* {
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Inherited from ancestor level 3 (regular) */
+:root {
+  --bg: #ffffff;
+  --panel: #f8f9fa;
+  --text: #2d2416;
+  --text-secondary: #6b6359;
+  --muted: #9a9089;
+  --accent: #c85a2e;
+  --accent-2: #22c55e;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.12);
+  --radius: 14px;
+  --radius-sm: 10px;
+  --max-width: 1180px;
+  --warm-beige: #f5f1ea;
+  --success: #10b981;
+  --warmDark: #3d3428;
+  --terracotta: #c85a2e;
+  --goldBeige: #b8926b;
+  --bg: #ffffff;
+  --panel: #f8f9fa;
+  --text: #2d2416;
+  --text-secondary: #6b6359;
+  --muted: #9a9089;
+  --accent: #c85a2e;
+  --accent-2: #22c55e;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.12);
+  --radius: 14px;
+  --radius-sm: 10px;
+  --max-width: 1180px;
+  --warm-beige: #f5f1ea;
+  --success: #10b981;
+  --warmDark: #3d3428;
+  --terracotta: #c85a2e;
+  --goldBeige: #b8926b;
+}
