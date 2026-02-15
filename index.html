@@ -25,10 +25,16 @@
   
   <link rel="canonical" href="https://bodenleger-ferizaj.de/">
   <link rel="icon" type="image/svg+xml" href="images/ferizaj-logo.svg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#c85a2e">
+  
+  <!-- Performance Optimierungen -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" as="style">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260202_projectsbg">
+  <link rel="preload" href="images/1.jpg" as="image">
+  <link rel="stylesheet" href="style.css?v=20260215_pro">
 </head>
 <body>
 
@@ -116,6 +122,29 @@
       </div>
     </section>
 
+    <section class="section stats-section" style="background: linear-gradient(135deg, var(--terracotta), #b84a1f); color: white; padding: 60px 0;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: center;">
+          <div class="stat-item">
+            <span class="stat-counter" data-count="20" data-suffix="+">0+</span>
+            <div style="font-size: 16px; opacity: 0.9; font-weight: 600;">Jahre Erfahrung</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-counter" data-count="150" data-suffix="+">0+</span>
+            <div style="font-size: 16px; opacity: 0.9; font-weight: 600;">Zufriedene Kunden</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-counter" data-count="500" data-suffix="+">0+</span>
+            <div style="font-size: 16px; opacity: 0.9; font-weight: 600;">Verlegte Projekte</div>
+          </div>
+          <div class="stat-item">
+            <span class="stat-counter" data-count="4.9" data-suffix="/5">0/5</span>
+            <div style="font-size: 16px; opacity: 0.9; font-weight: 600;">Google Bewertung</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="preise">
       <div class="container">
         <header class="section-head">
@@ -159,6 +188,61 @@
       </div>
     </section>
 
+    <section class="section calculator-section" id="kostenrechner">
+      <div class="container">
+        <header class="section-head">
+          <h2>Kostenrechner</h2>
+          <p>Berechnen Sie sofort eine erste Kostenschätzung für Ihr Projekt – unverbindlich und kostenlos.</p>
+        </header>
+        <div class="calculator-wrapper">
+          <div class="calculator-card">
+            <div class="calculator-form">
+              <div class="calc-group">
+                <label for="calc-bodenart">Bodenart wählen</label>
+                <select id="calc-bodenart" class="calc-input">
+                  <option value="40">Parkett (40-80 €/m²)</option>
+                  <option value="37.5">Vinyl/Designboden (25-50 €/m²)</option>
+                  <option value="27.5" selected>Laminat (20-35 €/m²)</option>
+                  <option value="30">Teppichboden (15-45 €/m²)</option>
+                </select>
+              </div>
+              
+              <div class="calc-group">
+                <label for="calc-flaeche">Fläche in m²</label>
+                <input type="number" id="calc-flaeche" class="calc-input" placeholder="z.B. 45" min="1" value="30">
+              </div>
+              
+              <div class="calc-group">
+                <label>Zusätzliche Leistungen</label>
+                <div class="calc-checkboxes">
+                  <label class="calc-checkbox">
+                    <input type="checkbox" id="calc-altbelag" value="8">
+                    <span>Altbelag entfernen (+8 €/m²)</span>
+                  </label>
+                  <label class="calc-checkbox">
+                    <input type="checkbox" id="calc-spachteln" value="12">
+                    <span>Untergrund spachteln (+12 €/m²)</span>
+                  </label>
+                  <label class="calc-checkbox">
+                    <input type="checkbox" id="calc-sockelleisten" value="6">
+                    <span>Sockelleisten montieren (+6 €/m²)</span>
+                  </label>
+                </div>
+              </div>
+              
+              <div class="calc-result">
+                <div class="calc-result-label">Geschätzte Kosten:</div>
+                <div class="calc-result-price" id="calc-total">825 €</div>
+                <div class="calc-result-note">* Unverbindliche Schätzung. Genaues Angebot nach Aufmaß.</div>
+              </div>
+              
+              <a href="#kontakt" class="btn btn-primary calc-cta">Jetzt verbindliches Angebot anfragen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-alt" id="ablauf">
       <div class="container">
         <header class="section-head">
@@ -192,6 +276,24 @@
           <h2>Ausgewählte Projekte</h2>
           <p>Ein kleiner Einblick in Böden, die wir in den letzten Monaten verlegt haben.</p>
         </header>
+        
+        <!-- Vorher/Nachher Slider -->
+        <div class="comparison-slider">
+          <div class="comparison-container">
+            <img src="images/1.jpg" alt="Boden vorher" class="comparison-img comparison-before">
+            <img src="images/4.jpg" alt="Boden nachher" class="comparison-img comparison-after">
+            <div class="comparison-divider">
+              <div class="comparison-handle">⇄</div>
+            </div>
+            <div class="comparison-labels">
+              <span class="comparison-label">Vorher</span>
+              <span class="comparison-label">Nachher</span>
+            </div>
+          </div>
+        </div>
+        
+        <div style="height: 40px;"></div>
+        
         <div class="project-grid">
             <article class="project-card">
               <button class="project-thumb" type="button" data-full="images/1.jpg" aria-label="Projekt 1 vergrößern">
@@ -409,7 +511,7 @@
         <div class="contact-form">
           <h2>Lassen Sie uns über Ihr Projekt sprechen</h2>
           <p>Beschreiben Sie kurz Ihr Wunsch – wir melden uns in der Regel innerhalb von 24 Stunden bei Ihnen zurück.</p>
-          <form id="kontakt-form">
+          <form id="kontakt-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
             <div class="form-group">
               <label for="name">Name *</label>
               <input type="text" id="name" name="name" required>
@@ -440,7 +542,7 @@
               <label for="nachricht">Ihre Nachricht / Fläche in m²</label>
               <textarea id="nachricht" name="nachricht" rows="4"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Nachricht senden</button>
+            <button type="submit" class="btn btn-primary" id="submit-btn">Nachricht senden</button>
             <div class="form-message" aria-live="polite"></div>
           </form>
         </div>
@@ -526,7 +628,7 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   
   <!-- Schema.org JSON-LD strukturierte Daten -->
   <script type="application/ld+json">

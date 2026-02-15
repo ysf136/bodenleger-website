@@ -1752,6 +1752,253 @@ textarea:focus {
   color: var(--accent);
 }
 
+/* Kostenrechner Styles */
+.calculator-section {
+  background: linear-gradient(135deg, var(--warm-beige) 0%, #fff 100%);
+}
+
+.calculator-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.calculator-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--border);
+}
+
+.calc-group {
+  margin-bottom: 24px;
+}
+
+.calc-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.calc-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background: var(--bg);
+}
+
+.calc-input:focus {
+  outline: none;
+  border-color: var(--terracotta);
+  box-shadow: 0 0 0 3px rgba(200, 90, 46, 0.1);
+}
+
+.calc-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.calc-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s ease;
+}
+
+.calc-checkbox:hover {
+  background: var(--panel);
+}
+
+.calc-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--terracotta);
+}
+
+.calc-checkbox span {
+  font-size: 15px;
+  color: var(--text);
+}
+
+.calc-result {
+  margin: 32px 0;
+  padding: 24px;
+  background: linear-gradient(135deg, var(--terracotta), #b84a1f);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  color: white;
+}
+
+.calc-result-label {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+
+.calc-result-price {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+.calc-result-note {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.calc-cta {
+  width: 100%;
+  justify-content: center;
+  font-size: 16px;
+}
+
+/* Animierte Statistiken */
+.stat-counter {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--terracotta);
+  line-height: 1;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.qual-badge .stat-counter {
+  font-size: 36px;
+}
+
+/* Vorher/Nachher Slider */
+.comparison-slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+}
+
+.comparison-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 66.67%; /* 3:2 Aspect Ratio */
+}
+
+.comparison-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.comparison-after {
+  clip-path: inset(0 0 0 50%);
+}
+
+.comparison-divider {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: ew-resize;
+  z-index: 2;
+}
+
+.comparison-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--terracotta);
+  font-weight: 700;
+}
+
+.comparison-labels {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.comparison-label {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Micro Animations */
+.service-card,
+.price-card,
+.qual-badge,
+.testimonial-card,
+.blog-card,
+.download-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover,
+.price-card:hover,
+.qual-badge:hover,
+.testimonial-card:hover,
+.blog-card:hover,
+.download-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Fade In Animation für Elemente beim Scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 720px) {
   .main-nav {
     gap: 12px;
@@ -1765,5 +2012,18 @@ textarea:focus {
   .cta-inline .container {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .calculator-card {
+    padding: 24px 20px;
+  }
+
+  .calc-result-price {
+    font-size: 36px;
+  }
+
+  .comparison-handle {
+    width: 40px;
+    height: 40px;
   }
 }

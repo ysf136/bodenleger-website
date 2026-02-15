@@ -1,0 +1,10 @@
+# robots.txt für bodenleger-ferizaj.de
+User-agent: *
+Allow: /
+Disallow: /downloads/
+
+# Sitemap
+Sitemap: https://bodenleger-ferizaj.de/sitemap.xml
+
+# Crawl-delay für Bot-Schutz
+Crawl-delay: 1

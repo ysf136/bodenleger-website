@@ -1,0 +1,20 @@
+{
+  "name": "Bodenleger Ferizaj Braunschweig",
+  "short_name": "Bodenleger Ferizaj",
+  "description": "Professionelle Bodenverlegung in Braunschweig & Umgebung. Parkett, Vinyl, Laminat & Treppenrenovierung.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#c85a2e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/ferizaj-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "home improvement"],
+  "lang": "de-DE"
+}
